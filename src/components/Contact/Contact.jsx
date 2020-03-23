@@ -5,11 +5,11 @@ const Contact = () => {
     return (
         <div className={c.contact}>
             <a name='contact'></a>
-            <ul>
-                <li>my mail</li>
-                <li>facebook</li>
-                <li>vk</li>
-            </ul>
+            <div className={c.contact_container}>
+                <div>E-mail</div>
+                <div>Facebook</div>
+                <div>Vk</div>
+            </div>
         </div>
     )
 }

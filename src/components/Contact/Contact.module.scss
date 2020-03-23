@@ -1,4 +1,10 @@
 .contact {
-    background-color: green;
+    background-color: #2394df;
     height: 30vh;
+}
+
+.contact_container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
 }

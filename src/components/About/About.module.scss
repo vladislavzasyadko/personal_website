@@ -66,31 +66,14 @@ img {
         width: 45vh;
     }
     .description_info{
-        font-size: 1rem;
+        font-size: 1.8rem;
         width:45vh
     }
 }
 
-@media screen and (max-width:660px) {
-    .description_hello {
-        font-size: 1.5rem;
-        width: 35vh;
-    }
-    .description_info {
-        font-size: 1rem;
-        width: 35vh;
-    }
-}
-
 @media screen and (max-width:550px) {
-    .description_hello {
-        border:2px solid #fff;
+    .description_hello, .description_info {
+        text-align: start;
         font-size: 1.8rem;
-
-    }
-    .description_info {
-        border:2px solid #fff;
-        font-size: 1.5rem;
-        
     }
 }
