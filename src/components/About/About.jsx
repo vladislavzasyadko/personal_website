@@ -11,7 +11,7 @@ const About = () => {
                 </div>
                 <div className={a.info}>
                     <div className={a.description_hello}>Hi! My name is Vladislav Zasyadko. I'm a front-end developer from Saint-Petersburg. Always looking for an opportunity to create.</div>
-                    <div className={a.description_info}>I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations. All of my work is produced locally from Moscow, Idaho. What would you do if you had a software expert available at your fingertips?</div>
+                    <div className={a.description_info}>I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations. All of my work is produced locally from Saint-Petersburg.</div>
                 </div>
             </div>
             </div>

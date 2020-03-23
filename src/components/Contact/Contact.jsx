@@ -6,9 +6,9 @@ const Contact = () => {
         <div className={c.contact}>
             <a name='contact'></a>
             <div className={c.contact_container}>
-                <div style={{backgroundImage: `url(https://cdn2.iconfinder.com/data/icons/social-icons-color/512/gmail-512.png)`}}>E-mail</div>
-                <div>Facebook</div>
-                <div>Vk</div>
+                <div className={c.social}>E-mail</div>
+                <div className={c.social}>Facebook</div>
+                <div className={c.social}>Vk</div>
             </div>
         </div>
     )

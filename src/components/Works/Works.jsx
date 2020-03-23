@@ -5,7 +5,6 @@ import WorkItem from './WorkItem/WorkItem'
 const Works = () => {
     return (
         <div className={w.works}>
-            
             <a name='works'></a>
             <div className={w.title}>My works</div>
             <div className={w.works_container}>

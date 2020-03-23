@@ -3,7 +3,6 @@
     min-height: 100vh;
     color: #e0e0e0;
     overflow: hidden;
-    
 }
 
 .bio{
@@ -63,11 +62,11 @@ img {
 @media screen and (max-width:700px) {
     .description_hello {
         font-size: 2rem;
-        width: 45vh;
+        width: 50vh;
     }
     .description_info{
         font-size: 1.8rem;
-        width:45vh
+        width:50vh
     }
 }
 
