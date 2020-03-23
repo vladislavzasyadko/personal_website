@@ -1,0 +1,30 @@
+.nav {
+    height: 100%;
+    width: 10vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #222238;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
+.nav_links {
+    color: #bbbaba;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .2s ease;
+    &:hover{
+        color: #dbdbdb;
+        border-color: #fff;
+    }
+}
+
+li {
+    padding: 1rem;
+}
