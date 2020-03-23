@@ -84,11 +84,13 @@ img {
 
 @media screen and (max-width:550px) {
     .description_hello {
-        font-size: 1.1rem;
-        width: 30vh;
+        border:2px solid #fff;
+        font-size: 1.8rem;
+
     }
     .description_info {
-        font-size: .8rem;
-        width: 30vh;
+        border:2px solid #fff;
+        font-size: 1.5rem;
+        
     }
 }

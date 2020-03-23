@@ -1,8 +1,14 @@
 .product {
-    background: blue;
+    background: #2394df;
+    padding: 10px;
     width: fit-content;
     display: inline-block;
     margin: 1rem;
+    min-width: 300px;
+    min-height: 300px;
+    justify-content: baseline;
+    text-align: center;
+    background-size: 300px;
 }
 
 .img_container {
@@ -11,14 +17,22 @@
 }
 
 .info {
+    margin: 50px;
     font-size: 1.5rem;
     background: white;
+    border-radius: 10px;
     padding: .5rem;
-
-
+    opacity: 0.9;
 }
 
 .btn {
-    background: red;
-
+    background:  #2394df;
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    a {
+        text-decoration: none;
+        color: #e0e0e0;
+    }
 }

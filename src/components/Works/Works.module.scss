@@ -1,4 +1,11 @@
 .works {
     background-color: #222238;
-    height: 100vh;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 3rem;
+    color: #e0e0e0;
 }
