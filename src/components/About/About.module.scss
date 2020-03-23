@@ -62,22 +62,33 @@ img {
 
 @media screen and (max-width:700px) {
     .description_hello {
-        font-size: 2.2rem;
+        font-size: 2rem;
         width: 45vh;
     }
     .description_info{
-        font-size: 1.2rem;
+        font-size: 1rem;
         width:45vh
     }
 }
 
-@media screen and (max-width:555px) {
+@media screen and (max-width:660px) {
     .description_hello {
-        font-size: 1.8rem;
-        width: 40vh;
+        font-size: 1.5rem;
+        width: 35vh;
     }
-    .description_info{
-        font-size: 1.2rem;
-        width:45vh
+    .description_info {
+        font-size: 1rem;
+        width: 35vh;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .description_hello {
+        font-size: 1.1rem;
+        width: 30vh;
+    }
+    .description_info {
+        font-size: .8rem;
+        width: 30vh;
     }
 }
