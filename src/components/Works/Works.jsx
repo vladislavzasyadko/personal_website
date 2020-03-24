@@ -14,6 +14,12 @@ const Works = () => {
                 Url='https://github.com/vladislavzasyadko/angular_todolist'/>
                 <WorkItem name='Social network' backgroundImage='https://cdn.worldvectorlogo.com/logos/react.svg' 
                 Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
+                <WorkItem name='Social network' backgroundImage='https://cdn.worldvectorlogo.com/logos/react.svg' 
+                Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
+                <WorkItem name='Social network' backgroundImage='https://cdn.worldvectorlogo.com/logos/react.svg' 
+                Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
+                <WorkItem name='Social network' backgroundImage='https://cdn.worldvectorlogo.com/logos/react.svg' 
+                Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
             </div>
         </div>
     )

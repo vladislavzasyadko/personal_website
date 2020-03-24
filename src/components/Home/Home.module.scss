@@ -171,14 +171,19 @@ p {
 @media screen and (max-width:735px) {
     .big_text {
         font-size: 2.1rem;
+        text-align: start;
+    }
+
+    p{
+        text-align: start;
     }
 }
 
-// @media screen and (max-width:660px) {
-//     .big_text {
-//         font-size: 1.5rem;
-//     }
-//     p {
-//         font-size: 1rem;
-//     }
-// }
+@media screen and (max-width:660px) {
+    .big_text {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
