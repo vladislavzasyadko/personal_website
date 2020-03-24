@@ -45,6 +45,7 @@
     border: 2px solid $secondary-color;
     border-radius: 10px;
     transition: .5s ease;
+    touch-action: cross-slide-y;
     &:hover {
         padding: 10px;
         
