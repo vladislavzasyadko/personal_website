@@ -46,7 +46,7 @@
     border-radius: 10px;
     transition: .5s ease;
     touch-action: auto;
-    &:hover, :focus {
+    &:hover, &:focus {
         padding: 10px;
         
         .info:after { 
