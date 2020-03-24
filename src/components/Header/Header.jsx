@@ -1,14 +1,15 @@
 import React from 'react'
 import h from './Header.module.scss'
+import classnames from "classnames";
 
-const Header = () => {
+const Header = (props) => {
     return (
-        <div className={h.header}>
+        <div className={classnames(h.header, {[h.header_hidden]: props.visible })}>
             <div className={h.links}>
-                <div className={h.social}><a href="#top">Home</a></div>
-                <div className={h.social}><a href="#about">About</a></div>
-                <div className={h.social}><a href="#works">Works</a></div>
-                <div className={h.social}><a href="#contact">Contacts</a></div>
+                <a href="#top">Home</a>
+                <a onClick={console.log('retard')} href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#contact">Contacts</a>
             </div>
         </div>
     )
