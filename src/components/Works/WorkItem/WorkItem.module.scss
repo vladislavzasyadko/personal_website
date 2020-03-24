@@ -1,5 +1,6 @@
-.product {
-    background: #2394df;
+@import '../../../styles';
+%block {
+    background: $primary-color;
     width: fit-content;
     display: inline-block;
     margin: 1rem;
@@ -10,6 +11,23 @@
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
+    a {
+        text-decoration: none;
+    }
+}
+.product {
+    @extend %block;
+    border: 2px solid $secondary-color;
+    border-radius: 10px;
+    transition: .5s ease;
+    &:hover {
+        padding: 10px;
+    }
+}
+
+.product_inner {
+    @extend %block;
+    opacity: 0.8;
 }
 
 .img_container {
@@ -22,26 +40,27 @@
     margin-bottom: 50px;
     width: 100%;
     font-size: 1.5rem;
-    background: white;
     padding: .5rem;
-    opacity: 0.75;
+    color: #fff;
+    text-transform: uppercase;
+    //text-decoration: none;
+    letter-spacing: 0.15em;
+    position: relative;
 }
 
-.btn {
-    cursor: pointer;
-    background:  #2394df;
-    width: 90px;
-    height: 40px;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: .4s ease;
-    &:hover {
-        box-shadow: 0 0 6px rgba(0,0,0,0.5);
-    }
-    a {
-        font-weight: bold;
-        text-decoration: none;
-        color: #e0e0e0;
-    }
-}
+.info:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.info:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }

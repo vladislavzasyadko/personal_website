@@ -1,7 +1,10 @@
+@import '../../styles';
+
 .works {
     padding-top:40px;
     padding-bottom:40px;
-    background-color: #222238;
+
+    background-color: $primary-color;
     min-height: 100vh;
     text-align: center;
     overflow: hidden;

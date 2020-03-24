@@ -1,5 +1,8 @@
+@import '../../styles';
+
 .contact {
-    background-color: #2394df;
+    border:2px solid green;
+    background-color: $primary-color;
     height: 30vh;
 }
 
@@ -9,8 +12,14 @@
     justify-content: space-around;
 }
 
-.social {
+%social {
     display: flex;
     justify-content: space-around;
-    color: #fff;
+    align-items: center;
+    color: $secondary-color;
+    font-size: 2rem;
+}
+
+.social {
+    @extend %social;
 }
