@@ -4,11 +4,10 @@
     width: fit-content;
     display: inline-block;
     margin: 1rem;
-    min-width: 300px;
-    min-height: 300px;
-    justify-content: baseline;
+    min-width: 17rem;
+    min-height: 17rem;
     text-align: center;
-    background-size: 300px;
+    background-size: 19rem;
     background-repeat: no-repeat;
     background-position: center;
     a {
@@ -26,6 +25,7 @@
 }
 
 .product_inner {
+    margin: 10px;
     @extend %block;
     opacity: 0.8;
 }
@@ -43,7 +43,6 @@
     padding: .5rem;
     color: #fff;
     text-transform: uppercase;
-    //text-decoration: none;
     letter-spacing: 0.15em;
     position: relative;
 }

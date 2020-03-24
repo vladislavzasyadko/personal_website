@@ -24,26 +24,17 @@
     width: 30vh;
     border-radius: 15rem;
     opacity: 0.9;
-    transition: 5s ease;
+    transition: 4s ease;
     z-index: 2;
 }
 
-// .img 
-// {
-// transition:5s ease;
-// -webkit-transition:all .5s ease-in-out;
-// -moz-transition:all .5s ease-in-out;
-// -ms-transition:all .5s ease-in-out;
-// -o-transition:all .5s ease-in-out;
-// }
-
 .img_bg:hover
 {
-transform:rotate(360deg) ;
--webkit-transform:rotate(360deg);
--moz-transform:rotate(360deg);
--ms-transform:rotate(360deg);
--o-transform:rotate(360deg); 
+transform:rotate(720deg) ;
+-webkit-transform:rotate(720deg);
+-moz-transform:rotate(720deg);
+-ms-transform:rotate(720deg);
+-o-transform:rotate(720deg); 
 }
 
 
@@ -99,6 +90,20 @@ transform:rotate(360deg) ;
 @media screen and (max-width:550px) {
     .description_hello, .description_info {
         text-align: start;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .description_hello, .description_info {
+        text-align: start;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .description_hello, .description_info {
+        text-align: start;
+        font-size: .7rem;
     }
 }

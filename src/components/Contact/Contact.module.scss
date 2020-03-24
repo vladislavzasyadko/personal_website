@@ -1,23 +1,23 @@
 @import '../../styles';
 
 .contact {
-    border:2px solid green;
     background-color: $primary-color;
     height: 30vh;
-}
-
-.contact_container {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
 }
 
 %social {
+    height: 45px;
+    width: 45px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: $secondary-color;
     font-size: 2rem;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .social {
