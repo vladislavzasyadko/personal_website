@@ -6,7 +6,7 @@ const About = () => {
         <div id='about' className={a.about}>
             <div className={a.bio}>
                 <div className={a.img_container}>
-                <img src="https://sun9-24.userapi.com/c845120/v845120123/12603b/e0fCudomv8Y.jpg" alt=""/>
+                <div className={a.img_bg}/>
                 </div>
                 <div className={a.info}>
                     <div className={a.description_hello}>Hi! My name is Vladislav Zasyadko. I'm a front-end developer from Saint-Petersburg. Always looking for an opportunity to create.</div>

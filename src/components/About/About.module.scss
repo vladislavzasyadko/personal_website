@@ -17,7 +17,9 @@
     text-align: center;
 }
 
-img {
+.img_bg {
+    background-image: url("https://sun9-24.userapi.com/c845120/v845120123/12603b/e0fCudomv8Y.jpg");
+    background-size: 30vh;
     height: 30vh;
     width: 30vh;
     border-radius: 15rem;
@@ -35,7 +37,7 @@ img {
 // -o-transition:all .5s ease-in-out;
 // }
 
-img:hover
+.img_bg:hover
 {
 transform:rotate(360deg) ;
 -webkit-transform:rotate(360deg);
@@ -47,7 +49,6 @@ transform:rotate(360deg) ;
 
 .img_container {
     padding: .3rem;
-    padding-bottom: .2rem;
     background-color: $secondary-color;
     border-radius: 15rem;
 }
