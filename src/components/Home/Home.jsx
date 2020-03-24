@@ -3,7 +3,7 @@ import h from './Home.module.scss'
 
 const Home = () => {
     return (
-        <div className={h.home}>
+        <div id='home' className={h.home}>
             <div>
 
                 <div className={h.text_area}>

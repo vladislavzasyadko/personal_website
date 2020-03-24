@@ -4,8 +4,7 @@ import WorkItem from './WorkItem/WorkItem'
 
 const Works = () => {
     return (
-        <div className={w.works}>
-            <a name='works'></a>
+        <div id='works' className={w.works}>
             <div className={w.title}>My works</div>
             <div className={w.works_container}>
                 <WorkItem name='Organizer' 

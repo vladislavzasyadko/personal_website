@@ -3,8 +3,7 @@ import a from './About.module.scss'
 
 const About = () => {
     return (
-        <div className={a.about}>
-            <a name='about'></a>
+        <div id='about' className={a.about}>
             <div className={a.bio}>
                 <div className={a.img_container}>
                 <img src="https://sun9-24.userapi.com/c845120/v845120123/12603b/e0fCudomv8Y.jpg" alt=""/>
