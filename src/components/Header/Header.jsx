@@ -7,7 +7,7 @@ const Header = (props) => {
         <div className={classnames(h.header, {[h.header_hidden]: props.visible })}>
             <div className={h.links}>
                 <a href="#top">Home</a>
-                <a onClick={console.log('retard')} href="#about">About</a>
+                <a href="#about">About</a>
                 <a href="#works">Works</a>
                 <a href="#contact">Contacts</a>
             </div>
