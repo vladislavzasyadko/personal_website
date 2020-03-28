@@ -47,7 +47,8 @@
     transition: .5s ease;
     touch-action: auto;
     &:hover, &:focus, &:active {
-        padding: 10px;
+        transform: scale(1.1);
+        
         
         .info:after { 
             width: 100%; 

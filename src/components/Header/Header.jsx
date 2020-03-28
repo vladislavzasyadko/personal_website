@@ -5,6 +5,7 @@ import {Link} from 'react-scroll'
 import ReactDOM from 'react-dom'
 
 const Header = (props) => {
+    
     return (
         <div className={classnames(h.header, {[h.header_hidden]: props.visible })}>
             <div className={h.links}>

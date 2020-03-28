@@ -1,6 +1,10 @@
 import React from 'react'
 import w from './Works.module.scss'
 import WorkItem from './WorkItem/WorkItem'
+import social from './../../img/socialnet.jpeg'
+import todo from './../../img/todo.jpeg'
+import organizer from './../../img/organizer.jpeg'
+
 
 const Works = () => {
     return (
@@ -8,17 +12,17 @@ const Works = () => {
             <div className={w.title}>My works</div>
             <div className={w.works_container}>
                 <WorkItem name='Organizer' 
-                backgroundImage='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png' 
+                backgroundImage={organizer} 
                 Url='https://github.com/vladislavzasyadko/organizer-app-angular'/>
-                <WorkItem name='TODO List' backgroundImage='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png' 
+                <WorkItem name='TODO List' backgroundImage={todo} 
                 Url='https://github.com/vladislavzasyadko/angular_todolist'/>
-                <WorkItem name='Social network' backgroundImage='https://cdn.worldvectorlogo.com/logos/react.svg' 
+                <WorkItem name='Social network' backgroundImage={social} 
                 Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
-                <WorkItem name='Social network' backgroundImage='https://cdn.worldvectorlogo.com/logos/react.svg' 
+                <WorkItem name='Social network' backgroundImage={social} 
                 Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
-                <WorkItem name='Social network' backgroundImage='https://cdn.worldvectorlogo.com/logos/react.svg' 
+                <WorkItem name='Social network' backgroundImage={social} 
                 Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
-                <WorkItem name='Social network' backgroundImage='https://cdn.worldvectorlogo.com/logos/react.svg' 
+                <WorkItem name='Social network' backgroundImage={social} 
                 Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
             </div>
         </div>
