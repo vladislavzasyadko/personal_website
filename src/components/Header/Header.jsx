@@ -2,7 +2,6 @@ import React from 'react'
 import h from './Header.module.scss'
 import classnames from "classnames";
 import {Link} from 'react-scroll'
-//import ReactDOM from 'react-dom'
 
 const Links = (props) => {
     return (
@@ -21,14 +20,12 @@ class Header extends React.Component {
     }
 
     activatePopUp = () => {
-        console.log('pop up')
         this.setState({
             menuPoppedOut: true
         })
     }
 
     deactivatePopUp = () => {
-        console.log('pop up')
         this.setState({
             menuPoppedOut: false
         })

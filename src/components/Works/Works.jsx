@@ -18,12 +18,6 @@ const Works = () => {
                 Url='https://github.com/vladislavzasyadko/angular_todolist'/>
                 <WorkItem name='Social network' backgroundImage={social} 
                 Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
-                <WorkItem name='Social network' backgroundImage={social} 
-                Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
-                <WorkItem name='Social network' backgroundImage={social} 
-                Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
-                <WorkItem name='Social network' backgroundImage={social} 
-                Url='https://github.com/vladislavzasyadko/react-course-social-network'/>
             </div>
         </div>
     )
