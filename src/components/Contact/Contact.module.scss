@@ -94,7 +94,7 @@ li {
     @extend %mail_element;
     width: 20%;
     min-width: max-content;
-
+    cursor: pointer;
 }
 
 .mail_message::-webkit-scrollbar

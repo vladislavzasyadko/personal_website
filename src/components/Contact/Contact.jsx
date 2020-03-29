@@ -71,7 +71,8 @@ class MailForm extends React.Component {
         const { name, email, message } = this.state;
         return (
             <div className={c.mail_form}>
-                <form name="contact" method="post" netlify onSubmit={this.handleSubmit}>
+                <form name="contact" method="post" netlify data-netlify="true" onSubmit={this.handleSubmit}>
+                <input type="hidden" name="form-name" value="contact" />
                     <div>
                         <input className={c.mail_info}  
                             name='name'
