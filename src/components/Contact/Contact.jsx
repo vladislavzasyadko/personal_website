@@ -36,38 +36,79 @@ const Contact = () => {
     )
 }
 
-const MailForm = () => {
-    return (
-        <div className={c.mail_form}>
-            <form action="POST" data-netlify='true'>
-                <div>
-                    <input className={c.mail_info} 
-                            name='name' 
-                            type="text" 
-                            placeholder='name'
-                            autoComplete={'off'} />
-                </div>
-                <div>
-                    <input className={c.mail_info} 
-                            name='email' 
-                            type="email" 
-                            placeholder='e-mail'
-                            autoComplete={'off'} />
-                </div>
-                <div>
-                    <textarea className={c.mail_message} 
-                            name='message' 
-                            type="text" 
-                            placeholder='message'/>
-                </div>
-                <div>
-                    <button className={c.submit_button} 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
+class MailForm extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { 
+            name: "", 
+            email: "", 
+            message: "" 
+        };
+    }
+
+    /* Here’s the juicy bit for posting the form submission */
+
+    handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+        e.preventDefault();
+    };
+
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+    render() {
+        const { name, email, message } = this.state;
+        return (
+            <div className={c.mail_form}>
+                <form  onSubmit={this.handleSubmit}>
+                    <div>
+                        <input className={c.mail_info}
+                            name='name'
+                            type="text"
+                            placeholder='Your name'
+                            value={name}
+                            autoComplete={'off'}
+                            onChange={this.handleChange} />
+                    </div>
+                    <div>
+                        <input className={c.mail_info}
+                            name='email'
+                            type="email"
+                            placeholder='Your email'
+                            value={email}
+                            autoComplete={'off'}
+                            onChange={this.handleChange} />
+                    </div>
+                    <div>
+                        <textarea className={c.mail_message}
+                            name='message'
+                            type="text"
+                            placeholder='message'
+                            value={message}
+                            onChange={this.handleChange} />
+                    </div>
+                    <div>
+                        <button className={c.submit_button}
                             type='submit'>Send
                     </button>
-                </div>
-            </form>
-        </div>
-    )
+                    </div>
+                </form>
+            </div>
+        )
+    }
 }
 
 export default Contact

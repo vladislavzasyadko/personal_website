@@ -52,9 +52,10 @@ li {
     text-align: center;
     padding: 30px;
     font-size: 4rem;
-    color: $secondary-color;
+    color: #fff;
     background-color: $primary-color;
 }
+
 %mail_element {
     border: 2px solid $secondary-color;
     border-radius: 15px;
@@ -92,6 +93,7 @@ li {
 .submit_button {
     @extend %mail_element;
     width: 20%;
+    min-width: max-content;
 
 }
 
