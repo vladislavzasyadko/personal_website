@@ -1,7 +1,5 @@
 import React from 'react'
 import c from './Contact.module.scss'
-import facebook from '../../img/facebook.svg'
-import google from '../../img/gmail.svg'
 
 const Contact = () => {
     return (
@@ -73,7 +71,7 @@ class MailForm extends React.Component {
         const { name, email, message } = this.state;
         return (
             <div className={c.mail_form}>
-                <form  onSubmit={this.handleSubmit}>
+                <form name="contact" method="post" data-netlify="true" netlify onSubmit={this.handleSubmit}>
                     <div>
                         <input className={c.mail_info}
                             name='name'
