@@ -26,7 +26,7 @@ export default class HeaderContainer extends React.Component {
     const { prevScrollpos } = this.state;
 
     const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos || currentScrollPos == 0;
+    const visible = prevScrollpos > currentScrollPos || currentScrollPos === 0;
     //console.log(visible);
 
     this.setState({

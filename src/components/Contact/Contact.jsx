@@ -6,8 +6,28 @@ import google from '../../img/gmail.svg'
 const Contact = () => {
     return (
         <div id='contact' className={c.contact}>
-                <div className={c.social} style={{ backgroundImage: `url(${google})` }}> </div>
-                <div className={c.social} style={{ backgroundImage: `url(${facebook})` }}> </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in icon"></i>
+                     </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-google-plus-g icon"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     )
 }
