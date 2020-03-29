@@ -3,7 +3,7 @@ import c from './Contact.module.scss'
 
 const Contact = () => {
     return (
-        <div id='contact'>
+        <div id='contacts'>
             <div className={c.title}>Let's work together!</div>
             <MailForm />
             <div className={c.contact}>
@@ -71,12 +71,12 @@ class MailForm extends React.Component {
         const { name, email, message } = this.state;
         return (
             <div className={c.mail_form}>
-                <form name="contact" action='POST' method="POST" 
-                netlify data-netlify='true' netlify-honeypot='bot-field' onSubmit={this.handleSubmit}>
+                <form name="contact" method="POST"
+                data-netlify="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
                     <div>
                         <input className={c.mail_info}  
-                            name='name'
+                            name="name"
                             type="text"
                             placeholder='Your name'
                             value={name}
@@ -85,7 +85,7 @@ class MailForm extends React.Component {
                     </div>
                     <div>
                         <input className={c.mail_info}
-                            name='email'
+                            name="email"
                             type="email"
                             placeholder='Your email'
                             value={email}
@@ -94,7 +94,7 @@ class MailForm extends React.Component {
                     </div>
                     <div>
                         <textarea className={c.mail_message}
-                            name='message'
+                            name="message"
                             type="text"
                             placeholder='message'
                             value={message}
@@ -102,7 +102,7 @@ class MailForm extends React.Component {
                     </div>
                     <div>
                         <button className={c.submit_button}
-                            type='submit'>
+                            type="submit">
                                 Send
                         </button>
                     </div>

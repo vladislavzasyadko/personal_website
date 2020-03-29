@@ -9,7 +9,7 @@ const Links = (props) => {
                 <Link to="home" smooth={true} duration={300}>Home</Link>
                 <Link to="about" smooth={true} duration={300}>About</Link>
                 <Link to="works" smooth={true} duration={300}>Works</Link>
-                <Link to="contact" smooth={true} duration={300}>Contacts</Link>
+                <Link to="contacts" smooth={true} duration={300}>Contacts</Link>
         </div>
     )
 }
@@ -49,7 +49,7 @@ class Header extends React.Component {
                 <Link onClick={this.deactivatePopUp} to="home" smooth={true} duration={300}>Home</Link>
                 <Link onClick={this.deactivatePopUp} to="about" smooth={true} duration={300}>About</Link>
                 <Link onClick={this.deactivatePopUp} to="works" smooth={true} duration={300}>Works</Link>
-                <Link onClick={this.deactivatePopUp} to="contact" smooth={true} duration={300}>Contacts</Link>
+                <Link onClick={this.deactivatePopUp} to="contacts" smooth={true} duration={300}>Contacts</Link>
         </div>
         }
         </>
