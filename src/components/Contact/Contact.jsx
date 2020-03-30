@@ -59,10 +59,15 @@ class MailForm extends React.Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...this.state })
         })
-            .then(() => alert("Success!"))
-            .catch(error => alert(error));
-
+            // .then(() => alert("Success!"))
+            // .catch(error => alert(error));
+        this.setState({
+            name: "", 
+            email: "", 
+            message: "" 
+        })
         e.preventDefault();
+        
     };
 
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -96,7 +101,6 @@ class MailForm extends React.Component {
                         <textarea className={c.mail_message}
                             name="message"
                             type="text"
-                            placeholder='message'
                             value={message}
                             onChange={this.handleChange} />
                     </div>
