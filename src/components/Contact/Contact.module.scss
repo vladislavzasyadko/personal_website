@@ -59,6 +59,7 @@ li {
     
 }
 .mail_form {
+    height: 40vh;
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
@@ -119,4 +120,18 @@ li {
         font-size: 1.2rem;
     }
 
+}
+
+.form_container {
+    display: flex;
+    align-items: center;
+}
+
+.confirm_form {
+    width: 300px;
+    left: -300px;
+}
+
+.submit_form {
+    width: 100vw;
 }
