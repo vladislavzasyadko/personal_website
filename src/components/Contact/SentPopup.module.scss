@@ -19,9 +19,11 @@
     color: #fff;
     border-radius: 10px;
     transition: 4s ease;
+    font-size: 1.8rem;
 
     button {
         @extend %mail_element;
+        font-size: 1.4rem;
         width: 20%;
         min-width: max-content;
         cursor: pointer;
